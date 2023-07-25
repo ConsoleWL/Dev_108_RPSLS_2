@@ -21,27 +21,27 @@ namespace RPSLS
             if (number == 0)
             {
                 chosenGesture = gestures[0];
-                Console.WriteLine($"{name} chooses {chosenGesture}");
+                Console.WriteLine($"{name} chooses {chosenGesture.name}");
             }
             else if (number == 1)
             {
                 chosenGesture = gestures[1];
-                Console.WriteLine($"{name} chooses {chosenGesture}");
+                Console.WriteLine($"{name} chooses {chosenGesture.name}");
             }
             else if (number == 2)
             {
                 chosenGesture = gestures[2];
-                Console.WriteLine($"{name} chooses {chosenGesture}");
+                Console.WriteLine($"{name} chooses {chosenGesture.name}");
             }
             else if (number == 3)
             {
                 chosenGesture = gestures[3];
-                Console.WriteLine($"{name} chooses {chosenGesture}");
+                Console.WriteLine($"{name} chooses {chosenGesture.name}");
             }
             else if (number == 4)
             {
                 chosenGesture = gestures[4];
-                Console.WriteLine($"{name} chooses {chosenGesture}");
+                Console.WriteLine($"{name} chooses {chosenGesture.name}");
             }
         }
     }
