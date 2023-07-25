@@ -43,7 +43,27 @@ namespace RPSLS
 
         public int ChooseNumberOfHumanPlayers()
         {
-            return 0;
+            Console.WriteLine("\nChoose number of players 1 or 2:");
+
+            while (true)
+            {
+                string temp = Console.ReadLine();
+
+                if (temp == "1")
+                {
+                    return 1;
+                }
+                if (temp == "2")
+                {
+                    return 2;
+                }
+                else
+                {
+                    Console.WriteLine("\nWrong input. Choose between 1 or 2:");
+                }
+            }
+            
+            
         }
 
         public void CreatePlayerObjects(int numberOfHumanPlayers)
@@ -64,6 +84,7 @@ namespace RPSLS
         public void RunGame()
         {
             WelcomeMessage();
+            ChooseNumberOfHumanPlayers();
         }
     }
 }
