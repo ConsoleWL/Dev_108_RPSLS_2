@@ -68,7 +68,16 @@ namespace RPSLS
 
         public void CreatePlayerObjects(int numberOfHumanPlayers)
         {
-
+            if (numberOfHumanPlayers == 1)
+            {
+                playerOne = new HumanPlayer("Nikita");
+                playerTwo = new ComputerPlayer("Computer");
+            }
+            if (numberOfHumanPlayers == 2)
+            {
+                playerOne = new HumanPlayer("Nikita");
+                playerTwo = new HumanPlayer("Michael");
+            }
         }
 
         public void CompareGestures()
